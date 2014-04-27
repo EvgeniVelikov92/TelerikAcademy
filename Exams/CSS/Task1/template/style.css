@@ -1,0 +1,90 @@
+html, body, div, h1, h2, nav, ul, li, article, p, aside, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 5px;
+}
+
+.clear {
+	clear: both;
+}
+
+#content h1, aside {
+    color: #59770e;
+    margin-top: 20px;
+}
+
+header {
+    background: url(images/header-bg.png) repeat-x;
+    height: 100px;
+}
+
+#title {
+    float: left;
+    padding-left: 20px;
+}
+
+    #title h1 {
+        color: #fff;
+        font-size: 34px;
+        margin-top: 10px;
+    }
+
+    #title h2 {
+        font-size: 30px;
+        color: #b7c0b7;
+    }
+
+ul {
+    float: right;
+    margin-right: 30px;
+}
+
+    ul li {
+        display: inline-block;
+        line-height: 100px;
+        color: #cc6600;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+#line {
+    height: 5px;
+    background-color: #39c518;
+}
+
+#content {
+    width: 760px;
+    float: left;
+}
+
+article p {
+    color: #555;
+    margin-top: 10px;
+}
+
+    article p:last-child {
+        margin-bottom: 10px;
+    }
+
+aside {
+    font-weight: bold;
+}
+
+    aside hr {
+        width: 195px;
+    }
+
+input {
+    width: 150px;
+    margin-left: 5px;
+}
