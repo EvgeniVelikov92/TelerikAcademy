@@ -1,0 +1,20 @@
+@mixin clearfix {
+	zoom:1;
+	&:after {
+		content: " ";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+@mixin linear-gradient ($start, $top, $middle, $bottom, $finish) {
+background: #9215f2;
+background: -moz-linear-gradient(top,  $start 0%, $top 13%, $middle 18%, $bottom 22%, $finish 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(13%,$top), color-stop(18%,$middle), color-stop(22%,$bottom), color-stop(100%,$finish));
+background: -webkit-linear-gradient(top,  $start 0%, $top 13%, $middle 18%, $bottom 22%,$finish 100%);
+background: -o-linear-gradient(top,  $start 0%, $top 13%, $middle 18%, $bottom 22%,$finish 100%);
+background: -ms-linear-gradient(top,  $start 0%, $top 13%, $middle 18%, $bottom 22%,$finish 100%);
+background: linear-gradient(to bottom,  $start 0%, $top 13%, $middle 18%, $bottom 22%,$finish 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$finish',GradientType=0 );
+}

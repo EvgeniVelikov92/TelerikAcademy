@@ -1,0 +1,34 @@
+body, header, nav, ul, li, a {
+	margin:0;
+	padding:0;
+}
+nav {
+	margin:10px;
+}
+ul {
+	list-style:none;
+	position:relative;
+	width:155px;
+}
+ul li a {
+    display:block;
+    text-decoration:none;
+    width:140px;
+    line-height:30px;
+    color:#15101d;
+    font-weight:bold;
+    padding-left:10px;
+}
+ul li a:hover {
+    text-decoration:underline;
+}
+li ul {
+	display:none;
+}
+ul li:hover ul {
+    display:block;
+    left: 15px;
+}
+ul li ul li a {
+	color:#9eabbb;
+}
