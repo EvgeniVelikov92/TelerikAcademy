@@ -3,11 +3,14 @@
 var number = 1592;
 var unit = number / 100;
 var tens = unit % 10 | 0;
-var bool = true;
+var booleans = true;
 
 if (tens === 7) {
-    bool = true;
+    booleans = true;
 }
 else {
-    bool = false;
+    booleans = false;
 }
+
+console.log(tens);
+console.log(booleans);

@@ -4,3 +4,5 @@ var x = 2;
 var y = 2;
 var r = 5;
 var point = (x * x) + (y * y) <= r;
+
+console.log(point);

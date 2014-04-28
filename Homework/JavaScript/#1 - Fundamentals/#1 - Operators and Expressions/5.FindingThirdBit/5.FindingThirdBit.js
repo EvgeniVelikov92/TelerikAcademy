@@ -4,3 +4,5 @@ var num = 7;
 var p = 3;
 var byt = num >> p;
 var nanbyt = num & 1;
+
+console.log(nanbyt);
