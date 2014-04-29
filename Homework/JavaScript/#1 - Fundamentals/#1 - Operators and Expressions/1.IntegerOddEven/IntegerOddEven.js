@@ -4,9 +4,9 @@ function givenInteger() {
     var number = parseInt(document.getElementById("number").value);
 
     if (number % 2 == 0) {
-        alert("The number: " + number + " is Odd");
+		document.getElementById("result").value = "The number: " + number + " is Even";
     }
     else {
-        alert("The number: " + number + " is Even");
+		document.getElementById("result").value = "The number: " + number + " is Odd";
     }
 }

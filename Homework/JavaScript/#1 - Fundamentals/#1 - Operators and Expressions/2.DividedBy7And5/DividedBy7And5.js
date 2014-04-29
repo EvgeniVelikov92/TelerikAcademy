@@ -6,10 +6,10 @@ function GivenIntegerDivided() {
 	
 	if (number % 5 == 0 && number % 7 == 0) {
 		bool = true;
-		alert("The number " + number + " can be divided by 7 and 5")
+		document.getElementById("result").value = "The number " + number + " can be divided by 7 and 5"
 	}
 	else {
 		bool = false;
-		alert("The number " + number + " can not be divided by 7 and 5")
+		document.getElementById("result").value = "The number " + number + " can not be divided by 7 and 5"
 	}
 }
