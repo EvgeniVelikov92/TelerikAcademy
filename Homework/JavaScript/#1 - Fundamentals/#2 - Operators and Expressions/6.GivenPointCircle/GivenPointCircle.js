@@ -4,6 +4,6 @@ function GivenPointCircle() {
 	var x = parseInt(document.getElementById("x").value);	
 	var y = parseInt(document.getElementById("y").value);	
 	var r = parseInt(document.getElementById("r").value);
-	var point = (x * x) + (y * y) <= r;
+	var point = (x * x) + (y * y) <= r * r;
 	document.getElementById("result").value = point;
 }
