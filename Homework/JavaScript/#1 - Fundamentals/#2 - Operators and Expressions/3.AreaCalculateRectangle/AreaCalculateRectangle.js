@@ -2,7 +2,8 @@
 
 function CalculateRectangleArea() {
 	var height = parseInt(document.getElementById("height").value);
-	var width = parseInt(document.getElementById("width").value);
-	var area = height * width;
+		width = parseInt(document.getElementById("width").value),
+		area = height * width,
+	
 	document.getElementById("result").value = " " + area.toFixed(2);
 }

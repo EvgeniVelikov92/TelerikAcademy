@@ -1,8 +1,8 @@
 // Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
 
 function GivenIntegerDivided() {
-	var number = parseInt(document.getElementById("number").value);
-	var bool = true;
+	var number = parseInt(document.getElementById("number").value),
+		bool = true;
 	
 	if (number % 5 == 0 && number % 7 == 0) {
 		bool = true;

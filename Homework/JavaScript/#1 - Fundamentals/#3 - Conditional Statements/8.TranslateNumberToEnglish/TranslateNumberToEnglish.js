@@ -1,8 +1,8 @@
 // Write a script that converts a number in the range [0...999] to a text corresponding to its English pronunciation.
 
 function TranslateNumberToEnglish() {
-    var num = parseInt(document.getElementById("number").value);
-    var result = "";
+    var num = parseInt(document.getElementById("number").value),
+		result = "";
 
     if (isNaN(num)) {
         result = "Number is empty! Check your entered number! Please Try Again!";

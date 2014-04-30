@@ -7,10 +7,10 @@ function FindTheGreatest() {
     number[2] = parseFloat(document.getElementById("third").value);
     number[3] = parseFloat(document.getElementById("fourth").value);
     number[4] = parseFloat(document.getElementById("fifth").value);
-    var index;
-    var greater = 0;
-    for (index = 0; index < number.length; index++) {
-        
+    var index,
+        greater = 0;
+
+    for (index = 0; index < number.length; index++) {        
         if (number[index] > greater) {
             greater = number[index];
         }

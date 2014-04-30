@@ -1,10 +1,10 @@
 // Try typeof on all variables you created.
 
-var str = "Hello JavaScript";
-var num = 678;
-var nul = null;
-var undefinedVariable = 8;
-var bool = true;
+var str = "Hello JavaScript",
+	num = 678,
+	nul = null,
+	undefinedVariable = 8,
+	bool = true;
 
 undefinedVariable = undefined;
 
