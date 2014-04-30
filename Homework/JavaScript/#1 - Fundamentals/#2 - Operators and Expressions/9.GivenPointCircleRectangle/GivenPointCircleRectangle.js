@@ -5,24 +5,47 @@ function GivenPointCircleRectangle() {
 	var y = parseInt(document.getElementById("y").value);	
 	var r = parseInt(document.getElementById("r").value);
 	var withinCircle = false;
-	var outsideRectangle = false;
+	var outsideRectangle = true;
 	var point = false;
 
 	if (isNaN(x) && isNaN(y)) {
 	    alert("The input is not valid");
+	    document.getElementById("result").innerHTML = "The input is not valid coordinates";
 	}
 	else {
 	    if ((x * x) + (y * y) < r * r) {
 	        withinCircle = true;
 	    }
-
-	    if ((x < -1 || x > 5 || y < -1 || y > 1)) {
-	        outsideRectangle = true;
+	    else {
+	        withinCircle = false;
 	    }
 
-	    if (outsideRectangle == true && withinCircle == true) {
-	        point = true;
-	        document.getElementById("result").innerHTML = "The Point is Outside Rectangle and Without Circle";
+	    if ((x < -1 || x > 6 || y < 1 || y > 2)) {
+	        outsideRectangle = true;
+	    }
+	    else {
+	        outsideRectangle = false;
+	    }
+
+	    if (outsideRectangle == false) {
+	        if (withinCircle == false) {
+	            point = false;
+	            document.getElementById("result").innerHTML = "The Point is Outside Rectangle and Without Circle";
+	        }
+	        else {
+	            point = false;
+	            document.getElementById("result").innerHTML = "The Point is Outside Rectangle and Within Circle";
+	        }
+	    }
+	    else {
+	        if (withinCircle == false) {
+	            point = false;
+	            document.getElementById("result").innerHTML = "The Point is Outside Rectangle and Without Circle";
+	        }
+	        else {
+	            point = true;
+	            document.getElementById("result").innerHTML = "The Point is Inside Rectangle and Within Circle";
+	        }
 	    }
 	}
 }
