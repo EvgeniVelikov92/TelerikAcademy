@@ -10,6 +10,7 @@ function FindMinAndMaxNumber() {
     for (i = 1; i <= arr; i++) {       
         num = Math.round(Math.random() * 100);
         alert("The number: " + num);
+		
         if (maxNum < num) {
             maxNum = num;
         }
