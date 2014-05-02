@@ -20,6 +20,7 @@ function CommparesArrays() {
                 break;
             }
         }
+		
         if (strOne.length > strTwo.length) {
             document.getElementById("result").innerHTML = "The Second Word is forward on Lexicography";
         }

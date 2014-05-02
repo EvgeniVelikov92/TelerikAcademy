@@ -10,8 +10,8 @@ for (property in navigator) {
     arr.push(navigator[property]);
 }
 
-smallestProperty = arr[0]
-largestProperty = arr[0];
+smallestProperty = "";
+largestProperty = "";
 
 for (i = 0; i < arr.length; i++) {
         
@@ -34,8 +34,8 @@ for (property in window) {
     arr.push(window[property]);
 }
 
-smallestProperty = arr[0]
-largestProperty = arr[0];
+smallestProperty = "";
+largestProperty = "";
 
 for (i = 0; i < arr.length; i++) {
 
@@ -58,8 +58,8 @@ for (property in document) {
     arr.push(document[property]);
 }
 
-smallestProperty = arr[0]
-largestProperty = arr[0];
+smallestProperty = "";
+largestProperty = "";
 
 for (i = 0; i < arr.length; i++) {
 
