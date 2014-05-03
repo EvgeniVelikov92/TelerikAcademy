@@ -3,21 +3,20 @@
 var numbers = new Array(28, 23, 3, 2, 4, 5, 7, 1, 8, 9, 12, 11, 15, 1, 2, 4),
     len = numbers.length,
     sorted_numbers = new Array(),
-    y,
-    z,
+    i,
+    j,
     index = 0;
 
-for (z = 0; z < len; z++) {
+for (i = 0; i < len; i++) {
     index = 0;
 
-    for (y = 0; y < numbers.length; y++) {
-
-        if (numbers[y] < numbers[index]) {
-            index = y;
+    for (j = 0; j < numbers.length; j++) {
+        if (numbers[j] < numbers[index]) {
+            index = j;
         }
     }
 
-    sorted_numbers[z] = numbers[index];
+    sorted_numbers[i] = numbers[index];
     numbers.splice(index, 1);
 }
 
