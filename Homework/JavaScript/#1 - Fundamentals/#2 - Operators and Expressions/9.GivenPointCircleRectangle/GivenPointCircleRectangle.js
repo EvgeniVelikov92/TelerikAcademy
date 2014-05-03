@@ -20,7 +20,7 @@ function GivenPointCircleRectangle() {
 	        withinCircle = false;
 	    }
 
-	    if ((x < -1 || x > 6 || y < 1 || y > 2)) {
+	    if ((x <= -1 || x >= 6 || y <= 1 || y >= 2)) {
 	        outsideRectangle = true;
 	    }
 	    else {

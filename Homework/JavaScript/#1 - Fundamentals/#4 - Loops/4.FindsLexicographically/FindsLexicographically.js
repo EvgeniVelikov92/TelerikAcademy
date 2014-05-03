@@ -10,19 +10,10 @@ for (property in navigator) {
     arr.push(navigator[property]);
 }
 
-smallestProperty = "";
-largestProperty = "";
+arr.sort();
 
-for (i = 0; i < arr.length; i++) {
-        
-    if (arr[i] < smallestProperty) {
-        smallestProperty = arr[i];
-    }
-
-    if (arr[i] > largestProperty) {
-        largestProperty = arr[i];
-    }
-} 
+smallestProperty = arr[0];
+largestProperty = arr[arr.length - 1];
 
 // Window Object --------------------------------------------------
 var property,
@@ -34,19 +25,10 @@ for (property in window) {
     arr.push(window[property]);
 }
 
-smallestProperty = "";
-largestProperty = "";
+arr.sort();
 
-for (i = 0; i < arr.length; i++) {
-
-    if (arr[i] < smallestProperty) {
-        smallestProperty = arr[i];
-    }
-
-    if (arr[i] > largestProperty) {
-        largestProperty = arr[i];
-    }
-}
+smallestProperty = arr[0];
+largestProperty = arr[arr.length - 1];
 
 // Document Object --------------------------------------------------
 var property,
@@ -58,16 +40,7 @@ for (property in document) {
     arr.push(document[property]);
 }
 
-smallestProperty = "";
-largestProperty = "";
+arr.sort();
 
-for (i = 0; i < arr.length; i++) {
-
-    if (arr[i] < smallestProperty) {
-        smallestProperty = arr[i];
-    }
-
-    if (arr[i] > largestProperty) {
-        largestProperty = arr[i];
-    }
-}
+smallestProperty = arr[0];
+largestProperty = arr[arr.length - 1];
