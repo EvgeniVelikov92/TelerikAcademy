@@ -5,5 +5,3 @@ function countDivs() {
         tags = document.getElementsByTagName(tag).length,
         res = document.getElementById("result").innerHTML = "The number of " + tag + " on you Web Page is: " + tags;
 }
-
-countDivs();
