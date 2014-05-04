@@ -1,6 +1,6 @@
 // Write a script that converts a number in the range [0...999] to a text corresponding to its English pronunciation.
 
-function TranslateNumberToEnglish() {
+function translateNumberToEnglish() {
     var num = parseInt(document.getElementById("number").value),
 		result = "";
 

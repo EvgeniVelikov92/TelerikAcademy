@@ -1,6 +1,6 @@
 // Write a script that prints all the numbers from 1 to N
 
-function PrintNumbers() {
+function printNumbers() {
     var n = parseInt(document.getElementById("number").value),
 		index;
 

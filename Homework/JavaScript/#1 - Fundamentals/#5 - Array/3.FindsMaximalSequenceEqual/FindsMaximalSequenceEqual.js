@@ -1,6 +1,6 @@
 // Write a script that finds the maximal sequence of equal elements in an array.
 
-function FindsMaximalSequenceEqual() {
+function findsMaximalSequenceEqual() {
     var arr = [2, 1, 1, 3, 3, 2, 2, 2, 1],
         i,
         len = 1,

@@ -1,6 +1,6 @@
 // Sort 3 real values in descending order using nested if statements.
 
-function SortThreeValues() {
+function sortThreeValues() {
     var first = parseFloat(document.getElementById("first").value),
 		second = parseFloat(document.getElementById("second").value),
 		third = parseFloat(document.getElementById("third").value),

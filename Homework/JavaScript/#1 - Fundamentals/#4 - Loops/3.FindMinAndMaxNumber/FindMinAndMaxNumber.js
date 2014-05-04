@@ -1,6 +1,6 @@
 // Write a script that finds the max and min number from a sequence of numbers.
 
-function FindMinAndMaxNumber() {
+function findMinAndMaxNumber() {
     var arr = parseInt(document.getElementById("number").value),
         i,
         maxNum = Number.MIN_VALUE,

@@ -1,6 +1,6 @@
 // Write a script that compares two char arrays lexicographically (letter by letter).
 
-function CommparesArrays() {
+function commparesArrays() {
     var strOne = document.getElementById("firstWord").value,
         strTwo = document.getElementById("secondWord").value,
         i,

@@ -1,6 +1,6 @@
 // Write a script that finds the biggest of three integers using nested if statements.
 
-function FindBiggestOfThree() {
+function findBiggestOfThree() {
     var first = parseInt(document.getElementById("first").value),
 		second = parseInt(document.getElementById("second").value),
 		third = parseInt(document.getElementById("third").value);

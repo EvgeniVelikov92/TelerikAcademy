@@ -1,6 +1,6 @@
 ﻿// Write an expression that checks if given positive integer number n (n ≤ 100) is prime. E.g. 37 is prime.
 
-function GivenIntegerNumberIsPrime() {
+function givenIntegerNumberIsPrime() {
 	var number = parseInt(document.getElementById("number").value),
 		booleans,
 		divider = 2,

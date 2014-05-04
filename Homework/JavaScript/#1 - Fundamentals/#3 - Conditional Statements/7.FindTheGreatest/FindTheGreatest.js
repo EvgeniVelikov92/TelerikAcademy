@@ -1,6 +1,6 @@
 // Write a script that finds the greatest of given 5 variables.
 
-function FindTheGreatest() {
+function findTheGreatest() {
     var number = new Array(5);
     number[0] = parseFloat(document.getElementById("first").value);
     number[1] = parseFloat(document.getElementById("second").value);

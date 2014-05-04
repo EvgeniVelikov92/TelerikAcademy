@@ -1,6 +1,6 @@
 // Write an expression that calculates trapezoid's area by given sides a and b and height h.
 
-function AreaCalculate() {
+function areaCalculate() {
 	var a = parseInt(document.getElementById("a").value),
 		b = parseInt(document.getElementById("b").value),
 		h = parseInt(document.getElementById("h").value),
