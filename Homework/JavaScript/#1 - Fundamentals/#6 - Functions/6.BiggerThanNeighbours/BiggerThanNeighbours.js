@@ -3,14 +3,11 @@
 function biggerThanNeighbours() {
     var arr = [1, 2, 3, 4, 5, 45, 6, 7, 8, 4, 6, 7, 8, 59, 3, 2, 4, 5, 3, 5, 3, 5, 7, 4, 3, 21, 3, 5, 6, 8];
     var pos = parseInt(document.getElementById("position").value);
-    var tr;
 
-    if (arr[pos - 1] < arr[pos] && arr[pos + 1] < arr[pos]) {
-        tr = true;
+    if (arr[pos - 2] < arr[pos - 1] && arr[pos] < arr[pos - 1]) {
+        document.getElementById("result").innerHTML = "The element in position " + pos + " is bigger than two neighbors.";
     }
     else {
-        tr = false;
+        document.getElementById("result").innerHTML = "The element in position " + pos + " is not bigger than two neighbors.";
     }
-
-    return tr;
 }
