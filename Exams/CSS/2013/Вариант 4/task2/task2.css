@@ -1,0 +1,63 @@
+﻿html, body, div, img, ul, li, a, span {
+	margin:0;
+	padding:0;
+}
+ul {
+	list-style:none;
+}
+img {
+	border:none;
+}
+a {
+	text-decoration:none;
+}
+li {
+		border-bottom:1px solid #000;
+		margin-top:5px;
+}
+body {
+	width:960px;
+	font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+	font-size: 16px;
+	margin:0 auto;
+}
+#wrapper {
+	width:700px;
+	margin:10px auto 0 auto;
+}
+#wrapper > div {
+	margin:0 auto;
+	background-color:#ccc;
+	width:700px;
+	overflow:hidden;
+}
+.holder {
+	float:left;
+	width:560px;
+}
+.holder img {
+	width:550px;
+	margin:10px;
+}
+.holder img, #wrapper > div, .playlist img {
+	border-radius:5px;
+}
+.playlist {
+	float:right;
+	width:120px;
+	margin:10px;
+}
+	.playlist img {
+		margin: 0 14px;
+	}
+	.playlist span {	
+		color:#000;
+		font-weight:bold;
+		font-size:16px;
+		display:inline-block;
+		margin-left:5px;
+		margin-bottom:5px;
+	}
+		.playlist a:hover span {
+			text-decoration:underline;
+		}

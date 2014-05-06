@@ -1,0 +1,80 @@
+﻿body, div, ul, li, a, h1, p, table, thead, tr, th, tbody, td {
+	margin:0;
+	padding:0;
+}
+html {
+	font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+	font-size:18px;
+}
+.accordion {
+	width:400px;
+	margin:10px auto;
+	text-align:center;
+	list-style:none;
+}
+.accordion li {
+	border:1px solid #000;
+}
+.accordion li .accordion-btn {
+	display:block;
+	text-decoration:none;
+	color:#444;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #aaaaaa 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#aaaaaa)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#aaaaaa 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#aaaaaa 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#aaaaaa 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#aaaaaa 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#aaaaaa',GradientType=0 ); /* IE6-9 */
+}
+.accordion li a:hover {
+	background: #aaa;
+}
+.accordion-content {
+	background-color:#aaa;
+	display:none;
+	color:#444;
+}
+.accordion li:first-child .accordion-content, li:last-child .accordion-content {
+	text-align:left;
+	padding-left:15px;
+}
+.accordion .accordion-content h1 {
+	color:#5e5e5e;
+}
+.accordion .accordion-content p {
+	color:#444;
+	text-align:justify;
+	padding:4px 15px;
+	line-height:25px;
+}
+table {
+	display:inline-block;
+	border-collapse: collapse;
+	margin:20px 0;
+}
+thead tr th:first-child {
+	border-top-left-radius:20px;
+}
+tbody tr td {
+	color:#fff;
+}
+td, th {
+	border:1px solid #000;
+	background: #cbcbcb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cbcbcb 0%, #898989 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cbcbcb), color-stop(100%,#898989)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cbcbcb 0%,#898989 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cbcbcb 0%,#898989 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cbcbcb 0%,#898989 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cbcbcb 0%,#898989 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcbcb', endColorstr='#898989',GradientType=0 ); /* IE6-9 */
+	padding:9px 5px;
+}
+th {
+	color:#444;
+}
+li.current .accordion-content {
+	display:block;
+}

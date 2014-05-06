@@ -1,0 +1,99 @@
+body, div, ul, li, a, table, thead, tr, th, tbody {
+	margin:0;
+	padding:0
+}
+body {
+	width: 960px;
+	font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+	font-size: 16px;
+	margin:0 auto;
+}
+a {
+	text-decoration:none;
+	color:#000;
+}
+#wrapper {
+	margin:0 auto;
+	width:345px;
+}
+.tab-strip {
+	width:344px;
+	height:230px;
+	border:1px solid #000;
+	border-radius:4px;
+	list-style:none;
+	position:relative;
+	margin-top:10px;
+}
+.tab-strip > li {
+	display:inline-block;
+}
+.tab-strip li a {
+	display:inline-block;
+	line-height:35px;
+	width:85px;
+	text-align:center;
+	border-bottom:1px solid #000;
+	border-right:1px solid #000;
+	border-radius:4px;
+	background: #ededed; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ededed 0%, #ababab 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#ababab)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ededed 0%,#ababab 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ededed 0%,#ababab 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ededed 0%,#ababab 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ededed 0%,#ababab 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ababab',GradientType=0 ); /* IE6-9 */
+}
+.tab-strip li a:hover  {
+	background:#eee;
+}
+.tab-strip .current a, .tab-strip .current a:hover {
+	background:#fff;
+	border-bottom:none;
+	border-radius:0;
+}
+.tab-content {
+	position:absolute;
+	left:1px;
+	display:none;
+	width:344px;
+	padding:18px;
+}
+.tab-content > ul {
+	list-style-position:inside;
+	margin-top:-6px;
+	margin-left:-13px;
+	list-style-type:disc;
+}
+.tab-content ul li ul {
+	list-style-type:lower-latin;
+	margin-left:20px;
+}
+.tab-strip .current .tab-content {
+	display:block;
+}
+table {
+	width:304px;
+	margin:-5px 2px;
+	border-collapse:collapse;
+}
+table tr td, th {
+	border:1px solid #000;
+	height:30px;
+}
+table tr th {
+	text-align:center;
+	background: #ababab; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ababab 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ababab), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ababab 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ababab 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ababab 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ababab 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ababab', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+table tr td {
+	padding-left:6px;
+	background-color:#eee;
+}

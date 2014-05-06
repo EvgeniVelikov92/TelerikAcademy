@@ -1,0 +1,75 @@
+html, body, div, hgroup, h3, h2, p, a {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    color:#d12d2f;
+}
+body {
+    width:960px;
+    margin:0 auto;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+}
+#wrapper {
+    margin:10px auto 0 auto;
+    width:920px;
+    display:block;
+}
+#wrapper:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+    #wrapper > div {
+        float:left;
+        border:1px solid #d3d7da;
+        width:148px;
+        height:260px;
+    }
+div#wrapper div hgroup{
+	background-position: left bottom !important;
+	padding-left: 45px;
+	height: 40px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+#wrapper > div:nth-child(1) {
+    background:url(imgs/install.png) 5px 5px no-repeat;
+}
+#wrapper > div:nth-child(2) {
+    background:url(imgs/tuneUp.png) 5px 5px no-repeat;
+}
+#wrapper > div:nth-child(3) {
+    background:url(imgs/manage.png) 5px 5px no-repeat;
+}
+#wrapper > div:nth-child(4) {
+    background:url(imgs/openSource.png) 5px 5px no-repeat;
+}
+#wrapper > div:nth-child(5) {
+    background:url(imgs/twitter.png) 5px 5px no-repeat;
+}
+#wrapper > div:nth-child(6) {
+    background:url(imgs/about.png) 5px 5px no-repeat;
+}
+h2 {
+    font-size:14px;
+}
+h3 {
+    font-size:16px;
+}
+p {
+    margin-top:10px;
+    font-size:17px;
+}
+#wrapper > div:nth-child(2n) {
+    height:280px;
+}
+.yellowBox {
+    width:138px;
+    margin:0 auto;
+    border:1px solid #ffff00;
+    background-color:#ffffdd;
+}

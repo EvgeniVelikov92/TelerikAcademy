@@ -1,0 +1,58 @@
+﻿html, body, div, h1, img, p {
+	margin:0;
+	padding:0;
+}
+body {
+	width:960px;
+	font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+	font-size: 16px;
+	margin:0 auto;
+}
+#wrapper {
+	width:935px;
+	margin:10px auto 0 auto;
+}
+	#wrapper div {
+		width:933px;
+		border:1px solid #000;
+		border-radius:14px;
+		background: #de28ff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #de28ff 0%, #f9dbff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#de28ff), color-stop(100%,#f9dbff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #de28ff 0%,#f9dbff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #de28ff 0%,#f9dbff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #de28ff 0%,#f9dbff 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #de28ff 0%,#f9dbff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de28ff', endColorstr='#f9dbff',GradientType=0 ); /* IE6-9 */
+	}
+		#wrapper div h1 {
+			padding-bottom:5px;
+			padding-top:20px;	
+			font-size:25px;
+		}
+		#wrapper div h1, #wrapper div p:last-child {
+			padding-left:35px;
+			padding-right:35px;
+		}
+.postedby {
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	width:380px;
+	line-height:28px;
+	font-size:15px;
+	padding-left:15px;
+	margin-left:50px;
+}
+p:last-child {
+	margin-top:5px;
+	margin-bottom:30px;
+}
+img {
+	margin-top:20px;
+}
+.left-arrow {
+	float:left;
+}
+.right-arrow {
+	float:right;
+}
