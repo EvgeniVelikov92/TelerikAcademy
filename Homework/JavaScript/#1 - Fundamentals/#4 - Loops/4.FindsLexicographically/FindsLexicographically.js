@@ -1,46 +1,25 @@
 // Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.
 
 // Navigator Object --------------------------------------------------
-var property,
-    smallestProperty,
-    largestProperty;
-var arr = [];                                      
 
-for (property in navigator) {
-    arr.push(navigator[property]);
+function findsLexicographically(obj) {
+    var property;
+    var arr = [];
+
+    for (property in obj) {
+        arr.push(obj[property]);
+    }
+
+    arr.sort();
+
+    return "Smallest Properti in " + arr[0] + "\nLargest Properti in " + arr[arr.length - 1];
 }
 
-arr.sort();
+console.log("----------------Document----------------------");
+console.log(findsLexicographically(document));
 
-smallestProperty = arr[0];
-largestProperty = arr[arr.length - 1];
+console.log("----------------Navigator----------------------");
+console.log(findsLexicographically(navigator));
 
-// Window Object --------------------------------------------------
-var property,
-    smallestProperty,
-    largestProperty;
-var arr = [];
-
-for (property in window) {
-    arr.push(window[property]);
-}
-
-arr.sort();
-
-smallestProperty = arr[0];
-largestProperty = arr[arr.length - 1];
-
-// Document Object --------------------------------------------------
-var property,
-    smallestProperty,
-    largestProperty;
-var arr = [];
-
-for (property in document) {
-    arr.push(document[property]);
-}
-
-arr.sort();
-
-smallestProperty = arr[0];
-largestProperty = arr[arr.length - 1];
+console.log("----------------Window----------------------");
+console.log(findsLexicographically(window));
