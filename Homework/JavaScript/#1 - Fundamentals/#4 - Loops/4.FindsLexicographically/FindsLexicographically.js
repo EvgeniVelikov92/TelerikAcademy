@@ -7,12 +7,12 @@ function findsLexicographically(obj) {
     var arr = [];
 
     for (property in obj) {
-        arr.push(obj[property]);
+        arr.push(property);
     }
 
     arr.sort();
 
-    return "Smallest Properti in " + arr[0] + "\nLargest Properti in " + arr[arr.length - 1];
+    return "Smallest Properti in: " + arr[0] + "\nLargest Properti in: " + arr[arr.length - 1];
 }
 
 console.log("----------------Document----------------------");
