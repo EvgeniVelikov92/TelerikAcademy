@@ -8,11 +8,23 @@ function getPoint(x, y) {
 }
 
 function calculateDistance(x1, x2, y1, y2) {
-    var distance = Math.sqrt(x1 + x2) * (x1 + x2) - (y1 + y2) * (y1 + y2);
-
-    return distance;
+    return Math.sqrt(x1 + x2) * (x1 + x2) - (y1 + y2) * (y1 + y2);
 }
 
-function createLines() {
 
+function createLines() {
+    var a = calculateDistance(4, 2, 2, 2);
+    var b = calculateDistance(3, 1, 7, 6);
+    var c = calculateDistance(2, 5, 6, 5);
+
+    createTriangle(a, b, c);
+}
+
+function createTriangle(first, second, third) {
+    if (true) {
+
+    }
+    else {
+        console.log("This points is did not make a Triangle. Please try again!");
+    }
 }
