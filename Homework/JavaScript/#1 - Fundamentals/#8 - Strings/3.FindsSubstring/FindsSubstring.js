@@ -11,7 +11,6 @@ function getText() {
 function findSubstring(txt, substr) {
     text = txt.toLowerCase();
     sub = substr.toLowerCase();
-    var i;
     var count = 0;
     var index = text.indexOf(sub);
 
