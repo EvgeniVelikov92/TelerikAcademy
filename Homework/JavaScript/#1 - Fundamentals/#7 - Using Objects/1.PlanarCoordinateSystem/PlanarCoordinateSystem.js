@@ -5,26 +5,47 @@ function getPoint(x, y) {
         x: x,
         y: y
     }
+
+    return poin;
 }
 
 function calculateDistance(x1, x2, y1, y2) {
-    return Math.sqrt(x1 + x2) * (x1 + x2) - (y1 + y2) * (y1 + y2);
+    var distance = Math.sqrt(x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+
+    return distance;
 }
 
 
-function createLines() {
-    var a = calculateDistance(4, 2, 2, 2);
-    var b = calculateDistance(3, 1, 7, 6);
-    var c = calculateDistance(2, 5, 6, 5);
+function createLines(pointX, pointY) {
+    var line = {
+        lineA: pointX,
+        lineB: pointY
+    }
 
-    createTriangle(a, b, c);
-}
+    return line;
+} 
 
 function createTriangle(first, second, third) {
-    if (true) {
-
+    var a = calculateDistance(first.lineA, first.lineB);
+    var b = calculateDistance(second.lineA, second.lineB);
+    var c = calculateDistance(third.lineA, third.lineB);
+    if ((a + b) > c && (b + c) > a && (a + c) > b) {
+        console.log("Triangle is Possible");
     }
     else {
         console.log("This points is did not make a Triangle. Please try again!");
     }
 }
+
+var firstPoint = getPoint(2, 5),
+    secondPoint = getPoint(6, 8),
+    thirdPoint = getPoint(2, 6),
+    fourthPoint = getPoint(-7, 8),
+    fifthPoint = getPoint(2, 7),
+    sixthPoint = getPoint(0, 4);
+
+var firstLine = createLines(firstPoint, secondPoint),
+    secondLine = createLines(thirdPoint, fourthPoint),
+    thirdLine = createLines(fifthPoint, sixthPoint);
+
+console.log(createTriangle(firstLine, secondLine, thirdLine));
