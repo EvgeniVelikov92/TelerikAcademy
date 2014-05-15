@@ -6,7 +6,7 @@ function replacesWhiteSpaces(txt) {
     var i;
     for (i = 0; i < txt.length; i++) {
         if (txt[i] === " ") {
-            txt = txt.replace(txt[i], '&nbsp');
+            txt = txt.replace(txt[i], '&nbsp;');
         }
     }
 
@@ -14,3 +14,11 @@ function replacesWhiteSpaces(txt) {
 }
 
 console.log(replacesWhiteSpaces(text));
+
+//function replacesWhiteSpaces(txt) {
+//    txt = txt.split(' ').join('&nbsp;')
+
+//    return txt;
+//}
+
+//console.log(replacesWhiteSpaces(text));
