@@ -15,10 +15,22 @@ function replacesWhiteSpaces(txt) {
 
 console.log(replacesWhiteSpaces(text));
 
-//function replacesWhiteSpaces(txt) {
-//    txt = txt.split(' ').join('&nbsp;')
 
-//    return txt;
-//}
 
-//console.log(replacesWhiteSpaces(text));
+function replacesWhiteSpaces(txt) {
+    txt = txt.split(' ').join('&nbsp;');
+
+    return txt;
+}
+
+console.log(replacesWhiteSpaces(text));
+
+
+
+function replacesWhiteSpaces(txt) {
+    txt = txt.replace(/ /g, '&nbsp;');
+
+    return txt;
+}
+
+console.log(replacesWhiteSpaces(text));
