@@ -7,9 +7,7 @@ function parseURLAddress(web) {
             protokol: "",
             server: "",
             resource: "",
-            toString: function () {
-                return this.protokol + "\n" + this.server + "\n" + this.resource;
-            }
+
         },
         colon,
         slash;
@@ -21,7 +19,7 @@ function parseURLAddress(web) {
     site.server = web.substring(colon + 3, slash);
     site.resource = web.substring(slash, web.length);
 
-    return site;
+    return site.protokol + "\n" + site.server + "\n" + site.resource;
 }
 
 parseURLAddress(webSite);
