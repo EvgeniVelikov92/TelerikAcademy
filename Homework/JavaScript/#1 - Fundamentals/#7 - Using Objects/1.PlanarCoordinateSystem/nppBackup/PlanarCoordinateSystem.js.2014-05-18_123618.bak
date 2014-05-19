@@ -22,8 +22,8 @@ function createPoint(x, y) {
 	return pointA, pointB;
 }
 
-function calculateDistance(PointOne, PointTwo) {
-    return Math.sqrt((PointOne.x - PointTwo.x) * (PointOne.x + PointTwo.x) + (PointOne.y - PointTwo.y) * (PointOne.y - PointTwo.y));
+function calculateDistance(xOne, xTwo, yOne, yTwo) {
+    return Math.sqrt((pointA.x - pointB.x) * (PointA.x + PointB.x) + (PointA.y - PointB.y) * (PointA.y - PointB.y));
 }
 
 function createLines(x1, x2, y1, y2) {
