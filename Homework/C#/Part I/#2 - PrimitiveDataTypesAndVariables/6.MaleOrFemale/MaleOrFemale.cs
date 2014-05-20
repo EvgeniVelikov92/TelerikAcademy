@@ -6,7 +6,7 @@ namespace MaleOrFemale
 {
     class MaleOrFemale
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string gender;
             bool isMale = true;

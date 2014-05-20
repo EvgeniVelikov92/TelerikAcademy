@@ -6,7 +6,7 @@ namespace IntegerToHexadecimal
 {
     class IntegerToHexadecimal
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int a = 0xFE;
             Console.WriteLine(a);

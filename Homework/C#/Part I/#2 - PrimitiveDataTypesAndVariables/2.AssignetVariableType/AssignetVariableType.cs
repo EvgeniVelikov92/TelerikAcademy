@@ -6,7 +6,7 @@ namespace AssignetVariableType
 {
     class AssignetVariableType
     {
-        static void Main(string[] args)
+        static void Main()
         {
             double first = 34.567839023;
             float second = 12.345f;

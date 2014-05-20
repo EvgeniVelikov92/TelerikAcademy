@@ -6,7 +6,7 @@ namespace CharacterSymbol
 {
     class CharacterSymbol
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int symbol;
 

@@ -6,7 +6,7 @@ namespace SafelyComparesFloat
 {
     class SafelyComparesFloat
     {
-        static void Main(string[] args)
+        static void Main()
         {
             float firstNum = 5.3f;
             float secondNum = 6.1f;

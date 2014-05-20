@@ -6,7 +6,7 @@ namespace DeclareFiveVariables
 {
     class DeclareFiveVariables
     {
-        static void Main(string[] args)
+        static void Main()
         {
             ushort first = 52130;
             sbyte second = -115;
