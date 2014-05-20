@@ -14,7 +14,7 @@ function checkExpression() {
         }
     }
 
-    if (correct === 0) {
+    if (correct === 0 && expression[0] !== ")" && expression[expression.length - 1] !== "(") {
         document.getElementById("result").innerHTML = "The Expressions: " + expression + " is Correct";
     }
     else {
