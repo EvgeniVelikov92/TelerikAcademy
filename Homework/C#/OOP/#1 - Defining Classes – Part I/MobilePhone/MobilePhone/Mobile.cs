@@ -25,7 +25,8 @@
             this.display = null;
         }
 
-        public Mobile(string manufacturer, string model, double price, string owner, Battery battery, Display display) : this(manufacturer, model)
+        public Mobile(string manufacturer, string model, double price, string owner, Battery battery, Display display)
+            : this(manufacturer, model)
         {
             this.Price = price;
             this.owner = owner;
