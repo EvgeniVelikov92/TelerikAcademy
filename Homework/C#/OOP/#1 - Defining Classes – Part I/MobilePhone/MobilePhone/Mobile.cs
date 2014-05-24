@@ -1,6 +1,7 @@
 ﻿namespace MobilePhone
 {
     using System;
+    using System.Collections.Generic;
 
     public class Mobile
     {
@@ -13,6 +14,8 @@
 
         public Battery battery = new Battery();
         public Display display = new Display();
+
+        List<Call> callHistory = new List<Call>();
 
         public Mobile(string manufacturer, string model) {
             this.Manufacturer = manufacturer;
