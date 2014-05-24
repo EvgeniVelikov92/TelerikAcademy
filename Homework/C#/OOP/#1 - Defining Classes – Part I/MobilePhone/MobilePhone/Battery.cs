@@ -4,17 +4,57 @@
 
     public class Battery : Mobile
     {
-        public uint hoursIdle;
-        public uint hoursTalk;
+        public double hoursIdle;
+        public double hoursTalk;
         public BatteryType model;
 
-        public BatteryType Model { get; set; }
+        public BatteryType Model 
+        {
+            get
+            {
+                return this.model;
+            }
+            set
+            {
+                this.model = value;
+            }
+        }
 
-        public uint HoursIdle { get; set; }
+        public double HoursIdle 
+        {
+            get
+            {
+                return this.hoursIdle;
+            }
+            set
+            {
+                if (double.IsNegativeInfinity(value))
+                {
+                    throw new ArgumentOutOfRangeException("The GSM Battery cannot be Negative Hours Idle!");
+                }
 
-        public uint HoursTalk { get; set; }
+                this.hoursIdle = value;
+            }
+        }
 
-        public Battery(BatteryType model, uint idle, uint talk)
+        public double HoursTalk 
+        {
+            get
+            {
+                return this.hoursTalk;
+            }
+            set
+            {
+                if (double.IsNegativeInfinity(value))
+                {
+                    throw new ArgumentOutOfRangeException("The GSM Battery cannot be Negative Hours Talk!");
+                }
+
+                this.hoursTalk = value;
+            }
+        }
+
+        public Battery(BatteryType model, double idle, double talk)
         {
             this.Model = model;
             this.HoursIdle = idle;

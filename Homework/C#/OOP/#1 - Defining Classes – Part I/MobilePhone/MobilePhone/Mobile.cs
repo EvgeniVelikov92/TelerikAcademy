@@ -7,7 +7,7 @@
         private string model;
         private string manufacturer;
         private double price;
-        private readonly string owner;
+        private string owner;
         private Battery battery;
         private Display display;
 
@@ -29,9 +29,26 @@
             : this(manufacturer, model)
         {
             this.Price = price;
-            this.owner = owner;
+            this.Owner = owner;
             this.battery = battery;
             this.display = display;
+        }
+
+        public string Owner
+        {
+            get
+            {
+                return this.owner;
+            }
+            set
+            {
+                if (value.Length < 3)
+                {
+                    throw new ArgumentOutOfRangeException("The Name most be longer than 3 symbols");
+                }
+
+                this.owner = value;
+            }
         }
 
         public double Price
@@ -61,7 +78,12 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException("Model cannot null or empty");
+                    throw new ArgumentNullException("The Model cannot null or empty");
+                }
+
+                if (value.Length < 3)
+                {
+                    throw new ArgumentOutOfRangeException("The Model most be longer than 3 symbols");
                 }
 
                 this.model = value;
