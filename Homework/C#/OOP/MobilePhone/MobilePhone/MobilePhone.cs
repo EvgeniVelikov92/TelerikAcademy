@@ -10,7 +10,7 @@
 
             Display dis = new Display(320, 2400000);
 
-            Mobile samsung = new Mobile(ModelType.Samsung, "Galaxy S5733", 179, "Evgeni Velikov", batt, dis);
+            Mobile samsung = new Mobile("Samsung", "Galaxy S5366", 179, "Evgeni Velikov", batt, dis);
 
             Console.WriteLine(samsung);
         }

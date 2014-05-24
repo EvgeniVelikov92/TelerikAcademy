@@ -24,8 +24,8 @@
         public override string ToString()
         {
             string model = "Battery Model: " + this.Model;
-            string idle = "Hours Idle: " + this.HoursIdle;
-            string talk = "Hours Talk: " + this.HoursTalk;
+            string idle = "Hours Idle: " + this.HoursIdle + " Hours";
+            string talk = "Hours Talk: " + this.HoursTalk + " Hours";
 
             return model + "\n" + idle + "\n" + talk;
         }
