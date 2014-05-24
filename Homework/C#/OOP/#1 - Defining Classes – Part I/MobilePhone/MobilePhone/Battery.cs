@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Battery : Mobile
+    public class Battery
     {
         public double hoursIdle;
         public double hoursTalk;
@@ -54,11 +54,11 @@
             }
         }
 
-        public Battery(BatteryType model, double idle, double talk)
+        public Battery()
         {
             this.Model = model;
-            this.HoursIdle = idle;
-            this.HoursTalk = talk;
+            this.HoursIdle = 0;
+            this.HoursTalk = 0;
         }
 
         public override string ToString()

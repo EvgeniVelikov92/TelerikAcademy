@@ -2,18 +2,18 @@
 {
     using System;
 
-    public class Display : Mobile
+    public class Display
     {
-        public uint size;
+        public string size;
         public uint colors;
 
-        public Display(uint size, uint colors)
+        public Display()
         {
             this.Size = size;
             this.Colors = colors;
         }
 
-        public uint Size
+        public string Size
         {
             get
             {
@@ -21,11 +21,6 @@
             }
             set
             {
-                if (value < uint.MinValue)
-                {
-                    throw new ArgumentOutOfRangeException("The GSM cannot be Negative Size!");
-                }
-
                 this.size = value;
             }
         }

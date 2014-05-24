@@ -8,30 +8,31 @@
         private string manufacturer;
         private double price;
         private string owner;
-        private Battery battery;
-        private Display display;
+        
+        private static string IPhone4S = null;
 
-        public Mobile()
-        {
-
-        }
+        public Battery battery = new Battery();
+        public Display display = new Display();
 
         public Mobile(string manufacturer, string model) {
             this.Manufacturer = manufacturer;
             this.Model = model;
-            this.Price = 0;
+            this.Price = 0.0;
             this.owner = null;
-            this.battery = null;
-            this.display = null;
+            IPhone4S = null;
         }
 
-        public Mobile(string manufacturer, string model, double price, string owner, Battery battery, Display display)
+        public Mobile(string manufacturer, string model, double price, string owner)
             : this(manufacturer, model)
         {
             this.Price = price;
             this.Owner = owner;
-            this.battery = battery;
-            this.display = display;
+        }
+
+        public Mobile(string manufacturer, string model, double price, string owner, string iPhone)
+            : this(manufacturer, model, price, owner)
+        {
+            IPhone4S = iPhone;
         }
 
         public string Owner
