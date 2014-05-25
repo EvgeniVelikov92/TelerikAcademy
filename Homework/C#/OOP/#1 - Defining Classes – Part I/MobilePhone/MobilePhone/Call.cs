@@ -6,25 +6,25 @@
     {
         private DateTime date;
         private ulong phoneNumber;
-        private string duration;
+        private long duration;
 
         public Call()
         {
-            duration = null;
+            duration = 0;
         }
 
-        public Call(string duration)
+        public Call(long duration)
         {
             this.Duration = duration;
         }
 
-        public Call(string duration, ulong phoneNumber)
+        public Call(long duration, ulong phoneNumber)
             : this(duration)
         {
             this.PhoneNumber = phoneNumber;
         }
 
-        public Call(string duration, ulong phoneNumber, DateTime date)
+        public Call(long duration, ulong phoneNumber, DateTime date)
             : this(duration, phoneNumber)
         {
             this.Date = date;
@@ -54,7 +54,7 @@
             }
         }
 
-        public string Duration
+        public long Duration
         {
             get
             {

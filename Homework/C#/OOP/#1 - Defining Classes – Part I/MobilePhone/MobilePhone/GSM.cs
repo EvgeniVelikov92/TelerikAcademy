@@ -3,8 +3,10 @@
     using System;
     using System.Collections.Generic;
 
-    public class Mobile
+    public class GSM
     {
+        private const double PRICE_PER_MINUTE = 0.37;
+
         private string model;
         private string manufacturer;
         private double price;
@@ -17,7 +19,7 @@
 
         List<Call> callHistory = new List<Call>();
 
-        public Mobile(string manufacturer, string model) {
+        public GSM(string manufacturer, string model) {
             this.Manufacturer = manufacturer;
             this.Model = model;
             this.Price = 0.0;
@@ -25,14 +27,14 @@
             IPhone4S = null;
         }
 
-        public Mobile(string manufacturer, string model, double price, string owner)
+        public GSM(string manufacturer, string model, double price, string owner)
             : this(manufacturer, model)
         {
             this.Price = price;
             this.Owner = owner;
         }
 
-        public Mobile(string manufacturer, string model, double price, string owner, string iPhone)
+        public GSM(string manufacturer, string model, double price, string owner, string iPhone)
             : this(manufacturer, model, price, owner)
         {
             IPhone4S = iPhone;
@@ -113,6 +115,41 @@
 
                 this.manufacturer = value;
             }
+        }
+
+        public void AddCall(Call call)
+        {
+            callHistory.Add(call);
+        }
+
+        public void RemoveCall(Call call)
+        {
+            for (int i = 0; i < callHistory.Count; i++)
+            {
+                if (call.Duration == callHistory[i].Duration)
+                {
+                    callHistory.RemoveAt(i);
+                }
+            }
+        }
+
+        public void RemoveAllCall()
+        {
+            callHistory.Clear();
+        }
+
+        public double CalculateTotalPrice()
+        {
+            long durationSum = 0;
+
+            foreach (var item in callHistory)
+            {
+                durationSum += item.Duration;
+            }
+
+            double resultPrice = (durationSum / 60) * PRICE_PER_MINUTE;
+
+            return resultPrice;
         }
 
         public override string ToString()
