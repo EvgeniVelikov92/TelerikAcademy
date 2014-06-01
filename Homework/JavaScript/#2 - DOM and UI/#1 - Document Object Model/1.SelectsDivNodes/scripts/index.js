@@ -3,23 +3,26 @@
 function usingQuerySelectorAll() {
     var insideDivs = document.querySelectorAll("div div");
 
-    for (var i = 0, len = insideDivs.length; i < len; i++) {
-        console.log(insideDivs[i]);
+    for (var item in insideDivs){
+        if (undefined != insideDivs[item].innerHTML) {
+            console.log(insideDivs[item].innerHTML);
+            console.log("*********************");
+        }
     }
 }
 
-
-// This Function is Not Working
 function usingGetElementsByTagName(){
     var outsideDivs = document.getElementsByTagName("div");
     var insideDivs;
 
-    for (var i = 0, len = outsideDivs.length; i < len; i++) {
-        insideDivs = outsideDivs[i].getElementsByTagName("div");
-        console.log(outsideDivs[i]);
+    for (var item in outsideDivs){
+        insideDivs = outsideDivs[item].getElementsByTagName("div");
 
-        for (var j = 0, lenTwo = insideDivs.length; i < lenTwo; i++){
-        console.log(insideDivs[i]);
+        for (var itemTwo in insideDivs) {
+            if (undefined != insideDivs[itemTwo].innerHTML) {
+                console.log(insideDivs[itemTwo].innerHTML);
+                console.log("*********************");
+            }
         }
     }
 }
