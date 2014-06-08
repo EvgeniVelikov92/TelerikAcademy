@@ -202,21 +202,5 @@ var childrenGirlText = new Kinetic.Text({
     fill: '#1b1b1b'
 });
 
-layer.add(grandfather);
-layer.add(lineGrandFatherToMother);
-layer.add(grandfatherText);
-layer.add(grandmother);
-layer.add(lineGrandMotherToMother);
-layer.add(grandmotherText);
-layer.add(father);
-layer.add(lineFatherToChildrenBoy);
-layer.add(fatherText);
-layer.add(mother);
-layer.add(lineMotherToChildrenBoy);
-layer.add(lineMotherToChildrenGirl);
-layer.add(motherText);
-layer.add(childrenBoy);
-layer.add(childrenBoyText);
-layer.add(childrenGirl);
-layer.add(childrenGirlText);
+layer.add(grandfather, lineGrandFatherToMother, grandfatherText, grandmother, lineGrandMotherToMother, grandmotherText, father, lineFatherToChildrenBoy, fatherText, mother, lineMotherToChildrenBoy, lineMotherToChildrenGirl, motherText, childrenBoy, childrenBoyText, childrenGirl, childrenGirlText);
 stage.add(layer);
