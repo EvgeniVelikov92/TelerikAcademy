@@ -1,3 +1,5 @@
+// Draw the following graphics using canvas:
+
 var canvas = document.getElementById('the-canvas'),
 	house = canvas.getContext('2d'),
 	bike = canvas.getContext('2d'),
