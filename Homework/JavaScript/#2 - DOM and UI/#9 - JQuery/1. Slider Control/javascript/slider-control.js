@@ -10,9 +10,9 @@ function sliderControl () {
 
 		if (count > $('li').length) {
 			count = 1;
-			$('li').first().addClass('current');				
+			$('li').first().addClass('current');	
 			$('li').last().removeClass('current');
-		}		
+		}	
 	}
 
 	$('#prev').click(function() {
@@ -35,7 +35,7 @@ function sliderControl () {
 		slideShow();
 		setTimeout(autoSlider, 1000);
 	}
-	
+
 	autoSlider();
 }
 
