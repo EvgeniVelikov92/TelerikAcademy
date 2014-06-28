@@ -46,5 +46,13 @@
 
             return result.ToString();
         }
+
+        public int xOne { get; set; }
+
+        public int xTwo { get; set; }
+
+        public int yOne { get; set; }
+
+        public int yTwo { get; set; }
     }
 }

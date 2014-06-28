@@ -13,6 +13,8 @@
             point.Z = 2;
 
             Console.WriteLine(point);
+
+            Console.WriteLine(DistancePoint.CalculateDistance(8, 3, 2, 5));
         }
     }
 }

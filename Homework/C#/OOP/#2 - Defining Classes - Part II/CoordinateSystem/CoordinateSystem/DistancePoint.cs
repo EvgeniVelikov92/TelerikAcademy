@@ -1,22 +1,26 @@
 ﻿namespace CoordinateSystem
 {
+    using System;
+
     public static class DistancePoint
     {
-        private int x;
-        private int y;
-        private int z;
-        public Point3D point = new Point3D();
+        private static int x;
+        private static int y;
+        private static int z;
+        public static Point3D pointOne = new Point3D();
+        public static Point3D pointTwo = new Point3D();
 
-        public DistancePoint()
+        static DistancePoint()
         {
-            this.point.X = x;
-            this.point.Y = y;
-            this.point.Z = z;
+            pointOne.X = x;
+            pointOne.Y = y;
+            pointTwo.X = x;
+            pointTwo.Y = y;
         }
 
-        public static int CalculateDistance(int x, int y, int z)
+        public static int CalculateDistance(double xOne, double xTwo, double yOne, double yTwo)
         {
-            return 0;
+            return ((pointOne.xOne - pointTwo.xTwo) * (pointOne.xOne + pointTwo.xTwo) + (pointOne.yOne - pointTwo.yTwo) * (pointOne.yOne - pointTwo.yTwo));
         }
     }
 }
