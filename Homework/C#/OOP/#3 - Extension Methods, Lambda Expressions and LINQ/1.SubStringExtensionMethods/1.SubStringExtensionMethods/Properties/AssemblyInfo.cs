@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExtensionMethods")]
+[assembly: AssemblyTitle("1.SubStringExtensionMethods")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExtensionMethods")]
+[assembly: AssemblyProduct("1.SubStringExtensionMethods")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6642c40c-6db4-41ee-bd39-2b6a80057a03")]
+[assembly: Guid("e0c51935-38f2-4c9e-8fe0-7b614fa38608")]
 
 // Version information for an assembly consists of the following four values:
 //
