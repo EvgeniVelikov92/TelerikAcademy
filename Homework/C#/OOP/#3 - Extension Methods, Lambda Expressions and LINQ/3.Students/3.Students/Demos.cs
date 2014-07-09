@@ -166,6 +166,19 @@
             Console.WriteLine("Extract all students with phones on Mtel.");
             var mtelPhoneStudents = students.Where(st => st.Tel.StartsWith("088"));
             PrintConsole(mtelPhoneStudents);
+
+            Console.WriteLine();
+
+            // Extracts all students grouped by GroupName and then prints them to the console. Use LINQ.
+            Console.WriteLine("Extracts all students grouped by GroupName 1");
+            var firstGroupStudents = students.Where(st => st.GroupNumber == 1);
+            PrintConsole(firstGroupStudents);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Extracts all students grouped by GroupName 2");
+            var secondGroupStudents = students.Where(st => st.GroupNumber == 2);
+            PrintConsole(secondGroupStudents);
         }
     }
 }

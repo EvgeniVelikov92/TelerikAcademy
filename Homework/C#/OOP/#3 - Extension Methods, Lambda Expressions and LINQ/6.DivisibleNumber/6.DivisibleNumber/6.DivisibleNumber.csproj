@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1F4C9802-8915-4C36-8A77-866CDEB99938}</ProjectGuid>
+    <ProjectGuid>{EB63719A-77F2-458A-A700-ACC723A66CAF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CoordinateSystem</RootNamespace>
-    <AssemblyName>CoordinateSystem</AssemblyName>
+    <RootNamespace>_6.DivisibleNumber</RootNamespace>
+    <AssemblyName>6.DivisibleNumber</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,9 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DistancePoint.cs" />
-    <Compile Include="Point3D.cs" />
-    <Compile Include="Test.cs" />
+    <Compile Include="Demos.cs" />
+    <Compile Include="DivisibleNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

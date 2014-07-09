@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CoordinateSystem")]
+[assembly: AssemblyTitle("6.DivisibleNumber")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CoordinateSystem")]
+[assembly: AssemblyProduct("6.DivisibleNumber")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("799c613c-4e96-4130-9954-55617a0195ad")]
+[assembly: Guid("f3bf570e-5fe0-4dd1-9a4a-b4e3b12077a1")]
 
 // Version information for an assembly consists of the following four values:
 //
