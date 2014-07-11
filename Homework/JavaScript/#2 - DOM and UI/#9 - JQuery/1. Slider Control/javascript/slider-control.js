@@ -7,7 +7,7 @@ function sliderControl () {
 		$('.current').next().addClass('current');
 		$('.current').prev().removeClass('current');
 		count+=1;
-
+		$('.current .title').html($('.current .image').attr('title'));
 		if (count > $('li').length) {
 			count = 1;
 			$('li').first().addClass('current');	
@@ -15,11 +15,12 @@ function sliderControl () {
 		}	
 	}
 
-	$('#prev').click(function() {
+	$('#prev').click(function(e) {
+		e.preventDefault();	
 		$('.current').prev().addClass('current');
 		$('.current').next().removeClass('current');
 		count-=1;
-
+		$('.current .title').html($('.current .image').attr('title'));
 		if(count < 1) {
 			count = $('li').length;
 			$('li').last().addClass('current');
@@ -27,13 +28,14 @@ function sliderControl () {
 		}
 	});
 
-	$('#next').click(function () {
+	$('#next').click(function(e) {
+		e.preventDefault();	
 		slideShow();
 	});
 
 	function autoSlider() {
 		slideShow();
-		setTimeout(autoSlider, 1000);
+		setTimeout(autoSlider, 5000);
 	}
 
 	autoSlider();
