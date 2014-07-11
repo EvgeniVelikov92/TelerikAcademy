@@ -1,6 +1,6 @@
 // Create a slider control using jQuery. The slider can have many slides. Only one slide is visible at a time. Each slide contains HTML code. i.e. it can contain images, forms, divs, headers, links, etc… Implement functionality for changing the visible slide after 5 seconds. Create buttons for next and previous slide.
 
-function sliderControl () {
+window.onload = function sliderControl () {
 	var count = 1;
 
 	function slideShow() {
@@ -35,10 +35,10 @@ function sliderControl () {
 
 	function autoSlider() {
 		slideShow();
-		setTimeout(autoSlider, 5000);
+		setTimeout(autoSlider, 1000);
 	}
 
-	autoSlider();
+	setTimeout(autoSlider, 1000);
 }
 
 sliderControl();
