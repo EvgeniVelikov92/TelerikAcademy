@@ -2,7 +2,8 @@
 
 window.onload = function sliderControl () {
 	var count = 1;
-
+	$('.current .title').html($('.current .image').attr('title'));
+	
 	function slideShow() {
 		$('.current').next().addClass('current');
 		$('.current').prev().removeClass('current');
@@ -41,4 +42,4 @@ window.onload = function sliderControl () {
 	setTimeout(autoSlider, 1000);
 }
 
-sliderControl();
+setTimeout(sliderControl, 1000);
