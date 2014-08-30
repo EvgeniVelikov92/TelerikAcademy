@@ -1,0 +1,18 @@
+﻿.menu {
+	padding:12px;
+	border:2px solid #ccc;
+}
+	.menu div {
+		 padding-left:20px;
+		 cursor:pointer ;
+	}
+	.menu .expanded {
+		background: url(http://www3.telus.net/jianlu58/minus.gif) no-repeat top left;
+	}
+	.menu .parent {	 
+		 background: url(http://www3.telus.net/jianlu58/plus.gif) no-repeat top left;
+	}
+		.menu .parent div {
+			 display:none;
+			 cursor:default;
+		}

@@ -1,0 +1,75 @@
+body {
+	background:black;
+}
+#wrapper {
+	width:820px;
+	margin:10px auto;
+}
+ul {
+	position:relative;
+	text-align:center;
+	list-style:none;
+	margin-top:-10px;
+	.item {
+		display:inline-block;
+		a img {
+			display:none;
+			margin-top:110px;
+			border:none;
+		}
+		#leopard, #horses, #lion, #squirrel, #tigers, #bear {
+			display:block;
+			width:120px;
+			height:100px;
+			background-position:center center;
+			background-repeat:no-repeat;
+			opacity:0.3;
+			transition:opacity 1.5s;
+			padding:20px 5px 20px 5px;
+			&:focus {
+				opacity:1;
+			}
+				&:focus img {
+					display:block;
+				}
+		} 
+		#leopard {
+			background-image:url(images/thumbs/leopard.jpg);
+			a {
+				&:focus {
+					display:block;
+				}
+			}
+		}
+		#horses {
+			background-image:url(images/thumbs/horses.jpg);
+			img {
+				margin-left:-130px;
+			}
+		}
+		#lion {
+			background-image:url(images/thumbs/lion.jpg);
+			img {
+				margin-left:-260px;
+			}
+		}
+		#squirrel {
+			background-image:url(images/thumbs/squirrel.jpg);
+			img {
+				margin-left:-390px;
+			}
+		}
+		#tigers {
+			background-image:url(images/thumbs/two-tiger.jpg);
+			img {
+				margin-left:-520px;
+			}
+		}
+		#bear {
+			background-image:url(images/thumbs/bear.jpg);
+			img {
+				margin-left:-650px;
+			}
+		}
+	}
+}

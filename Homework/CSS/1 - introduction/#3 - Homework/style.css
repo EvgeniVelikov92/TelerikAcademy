@@ -1,0 +1,45 @@
+﻿body
+{
+    background-color:#a9a9a9;
+}
+a {
+    text-decoration:none;
+}
+header > h1 {
+    text-align:center;
+    color:#fafad2;
+    font-size:36px;
+}
+ul {
+    list-style-type:none;
+    text-align:center;
+}
+    ul li a {
+        color:#fafad2;
+        font-weight:bold;
+        font-size:26px;
+    }
+		ul li a:hover {
+			text-decoration:underline;
+		}
+.current {
+    background-color:#d3d3d3;
+}
+article > header > h1 {
+    text-align:left;
+    font-size:30px;
+}
+article > p {
+    font-size:15px;
+    word-spacing:2px;
+    letter-spacing:0.6px;
+}
+article > footer p, a {
+    font-size:12px;
+}
+article > footer > p > a {
+    color:#000;
+}
+#footer {
+    text-align:center;
+}

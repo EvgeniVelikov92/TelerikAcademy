@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Simple number guessing game</title>
+</head>
+<body>
+	<div id="wrapper">
+		<form id="registration" method="get">
+			<label for="username">Username</label>
+			<input id="username" type="text" placeholder="username" />
+			<br />
+			<label for="password">Password</label>
+			<input id="password" type="password" placeholder="password" />
+			<br />
+			<input id="login-btn" type="submit" value="Login" />
+            <input id="registration-btn" type="submit" value="Registration" />
+		</form>
+		<div id="user"></div>
+		<div id="rams"></div>
+        <div id="pairs-container"></div>
+            <div id="abcd">
+                <span id="a"></span>
+                <span id="b"></span>
+                <span id="c"></span>
+                <span id="d"></span>
+            </div>
+            <form id="game" method="get">
+                <label for="x">X</label>
+                <input id="x" type="text" placeholder="8" />
+                <label for="y">Y</label>
+                <input id="y" type="text" placeholder="8" />
+                <label for="z">Z</label>
+                <input id="z" type="text" placeholder="8" />
+                <label for="w">W</label>
+                <input id="w" type="text" placeholder="8" />
+                <input id="submit" type="submit" value="Submit" />
+                <span id="result"></span>
+            </form>
+        </div>
+	<script src="javascript/jquery-2.1.1.min.js"></script>
+	<script src="javascript/game.js"></script>
+</body>
+</html>

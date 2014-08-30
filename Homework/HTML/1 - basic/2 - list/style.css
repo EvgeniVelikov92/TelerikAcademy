@@ -1,0 +1,30 @@
+﻿html {
+    background-color:#000;
+}
+body {
+    width:300px;
+    margin:10px auto;
+    background-color:#fff;
+    border-radius:10px;
+}
+header {
+    padding-left:10px;
+}
+ol {
+    list-style-type:upper-roman;
+}
+    ol li > ul {
+        list-style-type:square;
+    }
+    ol li > ol {
+        list-style-type:lower-latin;
+    }
+        ol li > ol li > ul {
+            list-style-type:circle;
+        }
+            ol li > ol li > ul li > ul {
+                list-style-type:square;
+            }
+#number {
+    list-style-type:decimal;
+}

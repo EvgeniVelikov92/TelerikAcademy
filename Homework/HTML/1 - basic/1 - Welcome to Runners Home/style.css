@@ -1,0 +1,39 @@
+﻿body, header, h1, ul, li, footer
+{
+    margin:0;
+    padding:0;
+}
+html {
+	background-color:#000;
+}
+body {
+    width:500px;
+    margin:10px auto;
+	background-color:#fff;
+	border-radius:10px;
+}
+header, footer {
+    display:block;
+}
+header, h1 , ul, footer{
+	margin-left:5px;
+}
+header {
+    line-height:30px;
+}
+h1 {
+    line-height:70px;
+}
+ul {
+    list-style-type:none;
+	margin-left:5px;
+}
+ul > li {
+	list-style-type:none;
+}
+    ul li > ul li:before {
+	    content:"-";
+	    position:relative;
+        margin-left:5px;
+	    left:-5px;
+    }

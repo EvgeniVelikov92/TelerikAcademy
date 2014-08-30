@@ -1,0 +1,14 @@
+﻿body, div {
+    margin:0;
+    padding:0;
+}
+body {
+    width:1200px;
+    margin:10px auto;
+}
+div {
+    background-color:#000;
+    border:1px solid #f00;
+    margin-right:3.2%;
+    border-radius:60px;
+}

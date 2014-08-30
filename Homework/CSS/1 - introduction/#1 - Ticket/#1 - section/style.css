@@ -1,0 +1,61 @@
+﻿body, header, h1, p, section
+{
+    margin:0;
+    padding:0;
+}
+body {
+    width:400px;
+    margin:0 auto;
+    background-color:#5b585b;
+}
+#name, #email, #time, #action, #status {
+    width:100%;
+    display:inline-block;
+}
+#name {
+    margin-top:24px;
+}
+header > h1 {
+    color:#afa49e;
+}
+.first, .second {
+    width:49%;
+    display:inline-block;
+	font-weight:bold;
+}
+.first {
+    float:left;
+}
+.second {
+    float:right;
+}
+.first > p {
+    font-style:italic;
+    color:#eee2d3;
+}
+#name .second p {
+    color:#d2caa7;
+}
+    #name .second p:nth-child(2n) {
+        color:#f00;
+    }
+#email .second a {
+    color:#d2caa7;
+    text-decoration:none;
+}
+#time .second p {
+    color:#c0bbba;
+}
+#action .second p {
+    color:#b8b3b4;
+}
+    #action .second p:nth-child(2n) {
+        color:#ddbe96;
+    }
+#status .second p {
+    color:#d9763b;
+}
+img {
+	padding-right:4px;
+	vertical-align:-1px;
+}

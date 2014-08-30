@@ -1,0 +1,20 @@
+table {
+	width:750px;
+	margin:0 auto;
+}
+ul, li {
+	margin:0;
+	padding:0;
+}
+ul {
+	list-style:none;
+}
+	ul li {
+		display:inline-block;
+	}
+th {
+	text-align:center;
+}
+th, td {
+	padding:2px 5px;
+}
